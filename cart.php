@@ -11,8 +11,7 @@ session_start();
 <!-- MAIN-CONTENT-SECTION START -->
 <section class="main-content-section">
     <div class="container">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" 
-		style="margin: 20px;">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 20px;">
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -89,7 +88,7 @@ session_start();
                                     <ul class="price text-right">
                                         <li class="price special-price"><?php echo number_format($rows['giaSanPham']);?>
                                             VNĐ</li>
-                                       
+
                                     </ul>
                                 </td>
                                 <td class="cart_quantity text-center">
@@ -157,7 +156,7 @@ session_start();
 													$resultSLHC=mysqli_fetch_assoc($querySLHC);
 													$soluonghienco = $resultSLHC['soLuongSanPham'];
 													//Lấy số lượng hiện có để só sánh
-													if ($soluonght > $soluonghienco){
+													if ($soluonght+1 > $soluonghienco){
 														echo "<script>alert('Vượt quá số lượng còn lại!');
 																window.location = 'cart.php';</script>";
 													}else{
