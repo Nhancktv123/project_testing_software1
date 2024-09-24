@@ -9,7 +9,7 @@
 					<!-- MAIN-SLIDER-AREA START -->
 					<div class="main-slider-area">
 								
-						<img src="img/wallpaper.jpg" alt="">
+						<img src="img/origin-levitate.png" alt="">
 						
 					</div>
 					<!-- MAIN-SLIDER-AREA END -->

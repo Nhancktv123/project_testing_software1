@@ -73,8 +73,8 @@ session_start();
                                 <div class="product-in-stock">
                                     <p><?php if ($resultProd['trangThaiSanPham'] == '1')
 											 echo 'Còn lại '.$resultProd['soLuongSanPham'].' sản phẩm' ?>
-                                        <?php if($resultProd['soLuongSanPham']>0) echo ' <button class="btn btn-success" >Còn hàng</button>';
-											 else if($resultProd['soLuongSanPham']<0) echo ' <button class="btn btn-danger" >Hết hàng</button>'; ?>
+                                        <?php if($resultProd['soLuongSanPham']>0) echo ' <span class="btn btn-success" >Còn hàng</span>';
+											 else if($resultProd['soLuongSanPham']<0) echo ' <span class="btn btn-danger" >Hết hàng</span>'; ?>
                                     </p>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ session_start();
                                 <div class="single-product-size">
 
                                     <div name="product-size" id="product-size">
-                                        <div value="<?php echo $resultProd["sizeSanPham"]; ?>"><b>Size: </b>
+                                        <div value="<?php echo $resultProd["sizeSanPham"]; ?>"><span>Size: </span>
                                             <?php echo $resultProd["sizeSanPham"]; ?></div>
                                     </div>
                                     </p>
